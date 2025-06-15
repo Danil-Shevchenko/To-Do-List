@@ -42,7 +42,7 @@ function Register() {
           <label className="pr-3">First name</label>
           <input
             type="text"
-            className="focus:outline-violet-500 pl-2"
+            className="focus:outline-violet-500 sm:pl-2"
             placeholder="First name"
             onChange={(e) => setFname(e.target.value)}
             required
@@ -53,7 +53,7 @@ function Register() {
           <label className="pr-3">Last name</label>
           <input
             type="text"
-            className="focus:outline-violet-500 pl-2"
+            className="focus:outline-violet-500 sm:pl-2"
             placeholder="Last name"
             onChange={(e) => setLname(e.target.value)}
           />
@@ -63,7 +63,7 @@ function Register() {
           <label className="pr-3">Email address</label>
           <input
             type="email"
-            className="focus:outline-violet-500 pl-2"
+            className="focus:outline-violet-500 sm:pl-2"
             placeholder="Enter email"
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -74,7 +74,7 @@ function Register() {
           <label className="pr-3">Password</label>
           <input
             type="password"
-            className="focus:outline-violet-500 pl-2"
+            className="focus:outline-violet-500 sm:pl-2"
             placeholder="Enter password"
             onChange={(e) => setPassword(e.target.value)}
             required
