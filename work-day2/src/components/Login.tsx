@@ -18,14 +18,14 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleSubmit}
-        className="bg-indigo-400 text-white w-full max-w-md p-8 rounded-xl shadow-md flex flex-col gap-4"
+        className="bg-indigo-400 text-white w-full sm:max-w-md h-full sm:h-auto sm:rounded-xl rounded-none p-8 shadow-md flex flex-col gap-4 justify-between sm:justify-normal"      
       >
         <h3 className="text-3xl">Login</h3>
 
-        <div className="mb-3">
+        <div className="flex flex-col gap-5 sm:flex-row">
           <label className="pr-4">Email address</label>
           <input
             type="email"
@@ -36,7 +36,7 @@ function Login() {
           />
         </div>
 
-        <div className="mb-3">
+        <div className="flex flex-col gap-5 sm:flex-row">
           <label className="pr-4">Password</label>
           <input
             type="password"
