@@ -38,7 +38,7 @@ function Register() {
         >
         <h3 className="text-3xl">Sign Up</h3>
 
-        <div className="mb-3">
+       <div className="flex flex-col gap-5 sm:flex-row">
           <label className="pr-3">First name</label>
           <input
             type="text"
@@ -49,7 +49,7 @@ function Register() {
           />
         </div>
 
-        <div className="mb-3">
+        <div className="flex flex-col gap-5 sm:flex-row">
           <label className="pr-3">Last name</label>
           <input
             type="text"
@@ -59,7 +59,7 @@ function Register() {
           />
         </div>
 
-        <div className="mb-3">
+        <div className="flex flex-col gap-5 sm:flex-row">
           <label className="pr-3">Email address</label>
           <input
             type="email"
@@ -70,7 +70,7 @@ function Register() {
           />
         </div>
 
-        <div className="mb-3">
+        <div className="flex flex-col gap-5 sm:flex-row">
           <label className="pr-3">Password</label>
           <input
             type="password"
