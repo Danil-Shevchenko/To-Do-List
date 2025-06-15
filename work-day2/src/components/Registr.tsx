@@ -31,11 +31,11 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="h-screen flex items-center justify-center bg-gray-100">
       <form
         onSubmit={handleRegister}
-        className="bg-indigo-400 text-white w-full max-w-md p-8 rounded-xl shadow-md flex flex-col gap-4"
-      >
+        className="bg-indigo-400 text-white w-full sm:max-w-md h-full sm:h-auto sm:rounded-xl rounded-none p-8 shadow-md flex flex-col gap-4 justify-between sm:justify-normal"      
+        >
         <h3 className="text-3xl">Sign Up</h3>
 
         <div className="mb-3">
