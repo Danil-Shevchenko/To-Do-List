@@ -29,7 +29,7 @@ function Login() {
           <label className="pr-4">Email address</label>
           <input
             type="email"
-            className="focus:outline-violet-500 pl-2"
+            className="focus:outline-violet-500 sm:pl-2"
             placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -40,7 +40,7 @@ function Login() {
           <label className="pr-4">Password</label>
           <input
             type="password"
-            className="focus:outline-violet-500 pl-2"
+            className="focus:outline-violet-500 sm:pl-2"
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
