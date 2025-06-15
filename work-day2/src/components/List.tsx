@@ -75,11 +75,11 @@ function List() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <div className="bg-indigo-400 text-white p-8 rounded-xl shadow-md ">
-          <header className="flex pb-4">
-            <h1 className="text-3xl mx-30 ">To-Do List</h1>
-            <Logout></Logout>
+    <div className="h-screen flex items-center justify-center bg-gray-100">
+      <div className="bg-indigo-400 text-white w-full sm:max-w-lg h-full sm:h-auto sm:rounded-xl rounded-none p-8 shadow-md ">
+          <header className="flex pb-4 justify-between">
+            <h1 className="text-3xl">To-Do List</h1>
+            <Logout/>
           </header>
           <AddNewToDo
             toDoListCollectionRef={toDoListCollectionRef}
