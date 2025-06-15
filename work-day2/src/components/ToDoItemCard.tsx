@@ -49,7 +49,7 @@ export default function ToDoItemCard({
   return (
     <div className="w-full pr-5">
       {isEditing ? (
-        <div className="flex justify-between gap-2">
+        <div className="flex justify-between gap-2 flex-col">
           <input
             type="text"
             value={editedName}
@@ -62,7 +62,7 @@ export default function ToDoItemCard({
             className="border-2 focus:outline-violet-500 pl-2 rounded-sm"
             onChange={(e) => setEditedDescription(e.target.value)}
           />
-          <div className="flex gap-2 justify-between">
+          <div className="flex gap-2 sm:justify-between justify-end">
             <button onClick={handleSave}>
               <i className="fi-rs-check text-green-700"></i>
             </button>
@@ -74,9 +74,9 @@ export default function ToDoItemCard({
       ) : (
         <>
           <h1 className="text-2xl">{item.Name}</h1>
-          <div className="flex w-full justify-between">
+          <div className="flex w-full justify-between flex-col sm:flex-row">
             <p>{item.Description}</p>
-            <div className="flex w-15 justify-between">
+            <div className="flex w-15 gap-2 self-end">
               <button onClick={() => setIsEditing(true)}>
                 <i className="fi-rs-attribution-pencil"></i>
               </button>
