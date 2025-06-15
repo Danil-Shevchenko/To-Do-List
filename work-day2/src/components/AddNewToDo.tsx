@@ -40,7 +40,7 @@ export default function AddNewToDo({ toDoListCollectionRef, onAdd }: Props) {
   };
 
   return (
-    <div className="flex justify-between gap-2 pb-4">
+    <div className="flex flex-col justify-between gap-2 pb-4 sm:flex-row">
       <input 
         className="border-2 focus:outline-violet-500 pl-2 rounded-sm"
         type="text"
